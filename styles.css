@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 #script {
@@ -34,6 +35,10 @@ body {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.body {
+  margin: 2rem;
 }
 
 .input-highlight {

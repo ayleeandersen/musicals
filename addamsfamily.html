@@ -4,13 +4,16 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>
+    <div class="topnav">
       <a href="./index.html">Home</a>
-    </h1>
-    <h2>Addam's Family</h2>
-    <label for="role">Role:</label>
-    <input id="role" name="role" type="text" placeholder="Wednesday" required>
-    <button onclick="highlight()">Highlight</button>
+      <a class="active" href="./addamsfamily.html">Addam's Family</a>
+    </div>
+    <div class="input-highlight">
+      <p>Enter the name of your part to highlight it in the script</p>
+      <label for="role">Role:</label>
+      <input id="role" name="role" type="text" placeholder="Wednesday" required>
+      <button onclick="highlight()">Highlight</button>
+    </div>
     <div id="script">
       <html>
         <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">

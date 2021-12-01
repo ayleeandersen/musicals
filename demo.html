@@ -915,11 +915,13 @@
 
     function highlight() {
       var text = document.getElementById("role").value;
-      var inputText = document.getElementById("script");
-      var innerHTML = inputText.innerHTML;
-      inputText.innerHTML = innerHTML.replace(toRegExp(text), (match) => {
-        return toSpan(match, 'highlight')
-      });
+      if (text !== "") {
+        var inputText = document.getElementById("script");
+        var innerHTML = inputText.innerHTML;
+        inputText.innerHTML = innerHTML.replace(toRegExp(text), (match) => {
+          return toSpan(match, 'highlight')
+        });
+      }
     }
   </script>
 </html>
